@@ -15,7 +15,7 @@ class ContactsController < ApplicationController
             redirect_to new_contact_path
         else
             flash[:danger] = 'Error occured, message has not been sent.'
-            redirect_to new_contact_path, notice: 'Error Occured'
+            redirect_to new_contact_path
         end
     end
     
