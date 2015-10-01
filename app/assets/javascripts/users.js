@@ -32,7 +32,8 @@ $(document).ready(function() {
     }
     else
     {
-      window.location = '../users/sign_up?plan=2'
+      f.append('<div class="alert alert-danger">Invalid card info, please try again</div>');
+      $('input[type=submit]').prop('disabled', false);
     }
   }
 });
